@@ -1,4 +1,10 @@
 {
   "version": 2,
-  "routes": [{ "src": "/rtc", "dest": "/server/index.ts" }]
+  "routes": [{ "src": "/rtc", "dest": "/server/index.ts" }],
+  "env": {
+    "APP_ID": "1053192",
+    "KEY": "f859a684df14b115b8c3",
+    "SECRET": "e5f95230cfbcae054b98",
+    "CLUSTER": "ap3"
+  }
 }
