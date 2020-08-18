@@ -1,7 +1,7 @@
 import * as React from "react";
 import Head from "next/head";
 
-function IndexPage() {
+function DemoPage() {
   return (
     <div>
       <Head>
@@ -13,4 +13,4 @@ function IndexPage() {
   );
 }
 
-export default IndexPage;
+export default DemoPage;
