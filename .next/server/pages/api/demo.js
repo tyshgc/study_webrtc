@@ -88,20 +88,30 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./pages/api/demo.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/api/demo.ts":
-/*!***************************!*\
-  !*** ./pages/api/demo.ts ***!
-  \***************************/
-/*! exports provided: default */
+/***/ 1:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("DF/z");
+
+
+/***/ }),
+
+/***/ "DF/z":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ((req, res) => {\n  res.json({\n    name: \"John\",\n    email: \"john@example.com\"\n  });\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcy9hcGkvZGVtby50cz8wYzVmIl0sIm5hbWVzIjpbInJlcSIsInJlcyIsImpzb24iLCJuYW1lIiwiZW1haWwiXSwibWFwcGluZ3MiOiJBQUVBO0FBQWUsZ0VBQUNBLEdBQUQsRUFBa0JDLEdBQWxCLEtBQXVDO0FBQ3BEQSxLQUFHLENBQUNDLElBQUosQ0FBUztBQUFFQyxRQUFJLEVBQUUsTUFBUjtBQUFnQkMsU0FBSyxFQUFFO0FBQXZCLEdBQVQ7QUFDRCxDQUZEIiwiZmlsZSI6Ii4vcGFnZXMvYXBpL2RlbW8udHMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBOb3dSZXF1ZXN0LCBOb3dSZXNwb25zZSB9IGZyb20gXCJAdmVyY2VsL25vZGVcIjtcblxuZXhwb3J0IGRlZmF1bHQgKHJlcTogTm93UmVxdWVzdCwgcmVzOiBOb3dSZXNwb25zZSkgPT4ge1xuICByZXMuanNvbih7IG5hbWU6IFwiSm9oblwiLCBlbWFpbDogXCJqb2huQGV4YW1wbGUuY29tXCIgfSk7XG59O1xuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/api/demo.ts\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ((req, res) => {
+  res.json({
+    name: "John",
+    email: "john@example.com"
+  });
+});
 
 /***/ })
 

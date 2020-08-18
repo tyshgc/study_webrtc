@@ -1,6 +1,9 @@
 {
+  "/api/channels-event": "pages/api/channels-event.js",
+  "/api/demo": "pages/api/demo.js",
+  "/demo": "pages/demo.html",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/demo": "pages/demo.js"
+  "/404": "pages/404.html"
 }

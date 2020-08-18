@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default ((req, res) => {\n  res.json({\n    name: \"John\",\n    email: \"john@example.com\"\n  });\n});","map":null,"metadata":{},"sourceType":"module"}
