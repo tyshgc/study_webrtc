@@ -1,3 +1,5 @@
-module.exports = (req: any, res: { send: (arg0: string) => void }) => {
-  res.send("Hello world from the /api route!");
+import { NowRequest, NowResponse } from "@vercel/node";
+
+export default (req: NowRequest, res: NowResponse) => {
+  res.json({ name: "John", email: "john@example.com" });
 };
