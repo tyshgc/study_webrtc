@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "routes": [{ "src": "/rtc", "dest": "/server/index.ts" }],
   "env": {
     "APP_ID": "@channels-app-id",
     "KEY": "f859a684df14b115b8c3",
