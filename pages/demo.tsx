@@ -6,7 +6,6 @@ function DemoPage() {
     <div>
       <Head>
         <title>Pusher Demo</title>
-        <script src="https://js.pusher.com/5.0/pusher.min.js"></script>
         <script src="/rtc-demo.js"></script>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
