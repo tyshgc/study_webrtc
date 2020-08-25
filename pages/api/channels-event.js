@@ -8,6 +8,7 @@ const {
   CLUSTER: cluster,
 } = process.env;
 */
+const { channels_app_id: appId } = process.env;
 
 /*
 const channels = new Channels({
@@ -25,5 +26,5 @@ module.exports = (req, res) => {
     res.status(200).end("sent event successfully");
   });
   */
-  res.status(200).end("sent event successfully");
+  res.status(200).end(`sent event successfully ${appId}`);
 };
