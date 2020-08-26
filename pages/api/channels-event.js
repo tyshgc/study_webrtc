@@ -1,30 +1,17 @@
-//const Channels = require("pusher");
+const Channels = require("pusher");
 
-/*
-const {
-  APP_ID: appId,
-  KEY: key,
-  SECRET: secret,
-  CLUSTER: cluster,
-} = process.env;
-*/
-const { channels_app_id: appId } = process.env;
-
-/*
-const channels = new Channels({
-  appId,
-  key,
-  secret,
-  cluster,
+const ch = new Channels({
+  appId: process.env.PUSHER_APP_ID,
+  key: "f859a684df14b115b8c3",
+  secret: process.env.PUSHER_APP_SECRET,
+  cluster: "ap3",
 });
-*/
 
 module.exports = (req, res) => {
-  //const data = req.body;
-  /*
-  channels.trigger("event-channel", "event-name", data, () => {
+  const data = req.body;
+  ch.trigger("my-channel", "my-event", data, () => {
     res.status(200).end("sent event successfully");
   });
-  */
-  res.status(200).end(`sent event successfully ${appId}`);
+
+  res.status(200).end(`sent event successfully`);
 };

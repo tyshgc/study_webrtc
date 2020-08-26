@@ -1,19 +1,11 @@
-// Initialize Channels client
-/*
-let channels = new Pusher("app-key", {
-  cluster: "cluster-region",
+let channels = new Pusher("f859a684df14b115b8c3", {
+  cluster: "ap3",
 });
-*/
-// Subscribe to the appropriate channel
-//let channel = channels.subscribe("channel-name");
+let channel = channels.subscribe("my-channel");
 
-// Bind a callback function to an event within the subscribed channel
-/*
-channel.bind("event-name", function (data) {
-  // Do what you wish with the data from the event
+channel.bind("my-event", function (data) {
   console.log(`data`, data);
 });
-*/
 
 async function pushData(data) {
   const res = await fetch("/api/channels-event", {
