@@ -9,9 +9,10 @@ const ch = new Channels({
 
 module.exports = (req, res) => {
   const data = req.body;
+
+  console.log(`request:`, data);
+
   ch.trigger("my-channel", "my-event", data, () => {
     res.status(200).end("sent event successfully");
   });
-
-  res.status(200).end(`sent event successfully`);
 };
